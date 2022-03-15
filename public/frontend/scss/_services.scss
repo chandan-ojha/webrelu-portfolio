@@ -1,0 +1,253 @@
+/*----------------------------------------*/
+/*  04. SERVICES CSS START
+/*----------------------------------------*/
+
+.mservices {
+	background: #1c1e22;
+	padding: 50px 45px;
+    position: relative;
+	border-radius: 8px;
+}
+.mservices__icon {
+	margin-bottom: 20px;
+}
+.mservices__icon i {
+	display: inline-block;
+	color: $theme;
+	font-size: 60px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.ms-title {
+	color: #fff;
+	font-size: 20px;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.ms-line-shape {
+	position: absolute;
+	bottom: -15px;
+	right: -15px;
+	transition: .3s;
+    z-index: 1;
+	height: 30px;
+	width: 30px;
+	background: $theme;
+}
+.mservices:hover .ms-line-shape {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+.mservices:hover .mservices__icon i{
+	color: #222;
+}
+.mservices:hover .ms-title{
+	color: #222;
+}
+
+.main-services .ddd {
+    counter-reset: slides-num;
+  }
+  
+  .main-services .ddd .mservices {
+    counter-increment: slides-num;
+  }
+  
+  .main-services .ddd .mservices::before {
+	content: "0" counter(slides-num) "";
+	position: absolute;
+	right: 45px;
+	top: 50px;
+	font-size: 50px;
+	line-height: 1em;
+	color: #ffffff;
+	opacity: 0.07;
+	font-family: $teko;
+	font-weight: 300;
+}
+
+
+/* 05. Cta */
+.kquality-icon {
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    text-align: center;
+    background: $theme;
+    border-radius: 50%;
+    float: left;
+    margin-right: 40px;
+    @include mq(xs){
+        float: inherit; 
+        margin-bottom: 30px;
+    }
+    @include mq(sm){
+        margin-bottom: 0px;
+        float: left;
+    }
+    & i{
+        font-size: 55px;
+        color: $white;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+.kquality-text-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.kquality-text {
+    & p {
+        font-size: 16px;
+        line-height: 2;
+        margin-bottom: 0px;
+    }
+
+}
+.kquality-img {
+    position: relative;
+    display: inline-block;
+    & img {
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+        }
+    }
+    &:before,
+    &:after {
+        height: 100%;
+        width: 10px;
+        top: 0px;
+        left: 0px;
+        background: $theme;
+        position: absolute;
+        content: '';
+        z-index: 1;
+    }
+    &:after {
+        left: 10px;
+        background: $white;
+    }
+}
+
+
+
+.service-title {
+	font-size: 36px;
+	margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.develop-wrapper{
+    & .develop-thumb{
+        margin-bottom: 35px;
+        & img{
+            -webkit-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+        }
+    }
+    & .develop-content{
+        padding-right: 20px;
+        @include mq(xs){
+            padding-right: 0px;
+        }
+    }
+}
+.plan-content {
+    
+    & h4{
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        color: $heading-color;
+    }
+    & p{
+        margin-bottom: 35px;
+    }
+    & li{
+        list-style: none;
+        font-size: 16px;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        &::before{
+            position: absolute;
+            content: '\f00c';
+            font-family: 'Font Awesome 5 pro';
+            top: 0;
+            left: 0;
+            color: $theme;
+        }
+    }
+}
+.widget_categories{
+    padding: 45px 30px 30px 35px;
+    background: $grey;
+    @include mq(lg){
+        padding: 45px 40px 30px 40px;
+    }
+    @include mq(xs){
+        padding: 30px 10px 15px 10px;
+    }
+    & li{
+        list-style: none;
+        position: relative;
+        & a{
+            font-size: 16px;
+            line-height: 26px;
+            color: $body-text-color;
+            padding: 14px 20px;
+            display: inline-block;
+            @include transition(0.3s);
+        }
+        &::before{
+            position: absolute;
+            content: '\f178';
+            font-family: 'Font Awesome 5 Pro';
+            top: 12px;
+            right: 20px;
+            color: $theme;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.3s);
+        }
+        &:hover{
+            background: $white;
+            &::before{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.bs-widget-title {
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.widget-btn{
+    & .theme-btn{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        padding: 0px 40px;
+    }
+}

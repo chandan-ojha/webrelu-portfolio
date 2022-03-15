@@ -1,0 +1,21 @@
+/*----------------------------------------*/
+/*  13. BRAND CSS START
+/*----------------------------------------*/
+
+.brand-wrapper {
+    text-align: center;
+    & img {
+        opacity: 0.3;
+        @include transition(0.3s);
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.brand-border{
+    border-bottom: 1px solid #e9ebed;
+    &-2{
+        border-top: 1px solid #e9ebed;
+    }
+}

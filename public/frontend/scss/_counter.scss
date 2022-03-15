@@ -1,0 +1,57 @@
+/*----------------------------------------*/
+/*  07. COUNTER CSS START
+/*----------------------------------------*/
+
+.single-couter {
+	line-height: 1;
+}
+.fact-icon {
+	background: #1c1e22;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	line-height: 113px;
+	border-radius: 50px;
+	margin-bottom: 15px;
+    position: relative;
+}
+.fact-icon i {
+	font-size: 44px;
+	color: $theme;
+    position: relative;
+    z-index: 2;
+}
+.single-couter:hover .fact-icon i{
+    color: #222;
+}
+.fact-icon::before {
+	position: absolute;
+	content: '';
+	left: 50%;
+	top: 50%;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	background: $theme;
+	z-index: 1;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+.single-couter:hover .fact-icon::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+.counter-box h2 {
+	font-weight: 400;
+	color: #fff;
+	font-size: 75px;
+	margin-top: 12px;
+}
+.single-couter h4 {
+	color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}

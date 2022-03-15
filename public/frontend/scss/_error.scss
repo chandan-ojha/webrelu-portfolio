@@ -1,0 +1,35 @@
+
+/*----------------------------------------*/
+/*  17. ERROR CSS START
+/*----------------------------------------*/
+
+.error{
+    &__title{
+        font-size: 70px;
+        line-height: .9;
+        margin-bottom: 10px;
+        @include mq(sm){
+            font-size: 60px;
+        }
+        @include mq(xs){
+            font-size: 37px;
+        }
+    }
+    &__content{
+        & p{
+            font-size: 20px;
+            color: $body-text-color;
+            margin-bottom: 45px;
+        }
+    }
+    &__thumb{
+        & img{
+            @include mq(sm){
+                width: 100%;
+            }
+            @include mq(xs){
+                width: 100%;
+            }
+        }
+    }
+}

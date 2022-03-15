@@ -1,0 +1,122 @@
+/*----------------------------------------*/
+/*  06. ABOUT CSS START
+/*----------------------------------------*/
+
+.ab-img img {
+	width: 100%;
+}
+.img-filter img{
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+.img-filter:hover img{
+    -webkit-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+}
+.ab-img {
+	margin-bottom: 5px;
+    position: relative;
+}
+.ab-icon {
+	margin-right: 25px;
+}
+.ab-icon i {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #FFEBDE;
+	font-size: 30px;
+	color: #222;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	border-radius: 8px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.ab-item-title {
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 8px;
+	position: relative;
+	top: -2px;
+}
+.ab-since {
+	position: absolute;
+	left: 0;
+	color: #fff;
+	border-radius: 8px;
+	text-align: center;
+	background: $theme;
+	padding: 60px 10px;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	width: 175px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ab-since::before {
+	content: "";
+	background: $theme;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: -24px;
+	left: 0;
+	border-radius: 0 50px 0 0;
+	display: none;
+}
+.ab-since h4 {
+	margin: 0;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.abs-icon i {
+	font-size: 35px;
+	color: $theme;
+}
+.abs-item-title {
+	font-size: 22px;
+	font-weight: 400;
+}
+.ab-line-shape {
+	height: 30px;
+	width: 100%;
+	background: #FD914F;
+	border-radius: 8px;
+}
+.abs-img img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+.ab-box{
+	@include mq(md){
+		padding-left: 0;
+		padding-right: 100px;
+	}
+	@include mq(xs){
+		padding-left: 0;
+	}
+}
+
+.abs-images-2{
+	@include mq(md){
+		padding-left: 0;
+	}
+	@include mq(sm){
+		padding-left: 0;
+	}
+	@include mq(xs){
+		padding-left: 0;
+	}
+}

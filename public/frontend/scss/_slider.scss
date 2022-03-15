@@ -1,0 +1,264 @@
+/*----------------------------------------*/
+/*  03. SLIDER CSS START
+/*----------------------------------------*/
+
+.img-zoom{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 8s;
+	-moz-transition: 8s;
+	transition: 8s;
+}
+.swiper-slide-active .img-zoom{
+	-webkit-transform: scale(1.12); 
+	-moz-transform: scale(1.12);
+	transform: scale(1.12);
+}
+.slider-list {
+	min-height: 950px;
+	background: #ddd; 
+    position: relative;
+	@include mq(md){
+		min-height: 700px;
+	}
+	@include mq(sm){
+		min-height: 700px;
+	}
+	@include mq(xs){
+		min-height: 700px;
+	}
+}
+.z-index{
+    position: relative;
+    z-index: 11;
+}
+.slider-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	-webkit-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	transform: scale(1);
+}
+.slider-list::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #222429;
+	opacity: 0.6;
+	z-index: 1;
+}
+.slider-title {
+	display: block;
+	font-size: 140px;
+	line-height: 0.85em;
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	margin: 0;
+	@include mq(md){
+		font-size: 90px;
+	}
+	@include mq(sm){
+		font-size: 80px;
+	}
+	@include mq(xs){
+		font-size: 60px;
+	}
+}
+.slider-sub-title {
+	display: block;
+	font-size: 24px;
+	line-height: 1.5em;
+	color: #ffffff;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 25px;
+	font-family: $teko;
+}
+.tp-btn {
+	position: relative;
+	overflow: hidden;
+	background: $theme;
+	text-align: center;
+	color: #222429;
+	height: 60px;
+	font-size: 18px;
+	line-height: 64px;
+	padding: 0 50px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	font-family: "Teko", sans-serif;
+	display: inline-block;
+	letter-spacing: 1px;
+	z-index: 1;
+	&::before {
+		background: #fff;
+		content: "";
+		height: 155px;
+		left: -75px;
+		opacity: .2;
+		position: absolute;
+		top: -50px;
+		transform: rotate(35deg);
+		transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+		width: 50px;
+		z-index: -10;
+	  }
+	&:hover{
+		color: $black;
+		&::before {
+			left: 120%;
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+		  }
+	}
+}
+
+
+.slider-shape {
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	border: 50px solid $theme;
+	bottom: -200px;
+	right: -100%;
+	z-index: 1;
+	border-radius: 8px;
+	transition: 1.5s;
+	@include mq(xs){
+		width: 300px;
+		height: 300px;
+		border-width: 20px;
+	}
+}
+
+.swiper-slide-active .slider-shape {
+	right: -200px;
+}
+.slider-circle-shape {
+	height: 350px;
+	width: 350px;
+	position: absolute;
+	left: 125px;
+	z-index: 1;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.4);
+	top: 0;
+	transition: .8s;
+	transform: scale(0);
+	&-2{
+		left: -120px;
+		top: -90px;
+	}
+}
+.swiper-slide-active .slider-circle-shape {
+	transform: scale(1);
+}
+.slider-shape-line {
+	position: absolute;
+	bottom: 120px;
+	left: -100%;
+	z-index: 2;
+	background: $theme;
+	height: 50px;
+	width: 200px;
+	border-radius: 0 8px 8px 0;
+	transition: 1.5s;
+	@include mq(xs){
+		height: 20px;
+		bottom: 40px;
+	}
+}
+.swiper-slide-active .slider-shape-line{
+	left: 0;
+}
+.swiper-slide-active .slider-shape-line2{
+	left: 0;
+}
+.slider-shape-line2 {
+	position: absolute;
+	bottom: 50px;
+	left: -100%;
+	z-index: 2;
+	background: $theme;
+	height: 50px;
+	width: 100px;
+	border-radius: 0 8px 8px 0;
+	transition: 1.5s;
+	@include mq(xs){
+		height: 20px;
+		bottom: 10px;
+	}
+}
+
+.swiper-button-prev.sp-arrow {
+	left: 50px;
+	right: auto;
+	@include mq(sm){
+		left: 15px;
+	}
+}
+.swiper-button-next.sp-arrow {
+	right: 50px;
+	left: auto;
+	@include mq(sm){
+		right: 15px;
+	}
+}
+.sp-arrow::after {
+	display: none;
+}
+.sp-arrow {
+	background: #fff;
+	height: 60px;
+	width: 60px;
+	font-size: 20px;
+	color: #222;
+	border-radius: 8px;
+	@include transition(.3s);
+	&:hover{
+		background: $theme;
+		color: $white;
+	}
+	@include mq(xs){
+		display: none;
+	}
+}
+
+.slider-height-2 {
+	min-height: 770px;
+	@include mq(md){
+		min-height: 700px;
+	}
+	@include mq(xs){
+		min-height: 500px;
+	}
+}
+
+.slider-text-2{
+	@include mq(lg){
+		padding-left: 125px;
+	}
+	@include mq(md){
+		padding-left: 115px;
+	}
+	& .slider-title{
+		@include mq(lg){
+			font-size: 100px;
+		}
+	}
+}

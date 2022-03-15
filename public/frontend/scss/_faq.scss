@@ -1,0 +1,118 @@
+/*----------------------------------------*/
+/*  09. FAQ CSS START
+/*----------------------------------------*/
+
+.accordion-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 19px 25px;
+	padding-bottom: 18px;
+	font-size: 21px;
+	color: #fff;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	overflow-anchor: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+	background: #1c1e22;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	@include mq(xs){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.accordion-item {
+	margin-bottom: 12px;
+	background: #1C1E22;
+}
+.accordion-button:not(.collapsed)::after {
+	transform: rotate(180deg);
+    background: none !important;
+}
+.accordion-button::after {
+    font-family: "Font Awesome 5 pro";
+	flex-shrink: 0;
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	content: "\f107";
+	background: none !important;
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: #86b7fe;
+	outline: 0;
+	box-shadow: none;
+	border: 0;
+}
+.accordion-item:first-of-type .accordion-button {
+	border-radius: 0;
+}
+.accordion-button:not(.collapsed) {
+	color: #222;
+	background-color: $theme;
+}
+.accordion-body {
+	padding-left: 25px;
+}
+.accordion-body p {
+	margin: 0;
+	color: #a0a2a6;
+}
+
+.faq-bg {
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	background-size: cover;
+	top: 0;
+	-webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+	@include mq(md){
+		display: none;
+	}
+	@include mq(sm){
+		display: none;
+	}
+	@include mq(xs){
+		display: none;
+	}
+}
+
+.faq-content{
+	@include mq(lg){
+		padding-left: 0;
+	}
+	@include mq(md){
+		padding-left: 0;
+	}
+	@include mq(sm){
+		padding-left: 0;
+	}
+	@include mq(xs){
+		padding-left: 0;
+	}
+}
+
+.faq-white{
+	& .accordion-button{
+		color: $black;
+		background: $white;
+		@include box-shadow(0px 0px 40px 5px rgba(0, 0, 0, 0.03));
+	}
+	& .accordion-collapse{
+		border: none;
+	}
+	& .accordion-body{
+		background: $white;
+	}
+	& .accordion-item:last-of-type .accordion-button {
+		border-bottom-width: 1px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0; 
+	}
+}

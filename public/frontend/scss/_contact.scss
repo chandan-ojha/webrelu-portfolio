@@ -1,0 +1,86 @@
+
+/*----------------------------------------*/
+/*  15. CONTACT CSS START
+/*----------------------------------------*/
+
+.single-contact-info{
+    padding-top: 30px;
+    &:hover{
+        & .contact-info-icon{
+            & a{
+                background-color: $theme;
+                color: $white;
+            }
+        }
+    }
+    &:last-child{
+        border: none;
+    }
+}
+.contact-info-icon {
+    margin-right: 20px;
+    & a{
+        height: 65px;
+        width: 65px;
+        background: $grey;
+        display: inline-block;
+        line-height: 65px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 20px;
+        color: $theme;
+        @include transition(.3s);
+        &:hover{
+            background-color: #222;
+            color: $white;
+        }
+    }
+}
+.contact-info-text{
+    & span{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $body-text-color;
+        font-weight: 400;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    & h5{
+        font-weight: 400;
+        font-size: 20px;
+        @include mq(xs){
+            font-size: 16px;
+        }
+    }
+}
+
+.contact-form {
+    & input, textarea {
+        width: 100%;
+        padding: 25px;
+        color: $body-text-color;
+        border: none;
+        background: $grey;
+        font-size: 14px;
+        border: 1px solid transparent;
+        @include transition (.3s);
+        outline: none;
+        &:focus{
+            border-color: $theme;
+        }
+        &::placeholder{
+            color: #777a7e;
+        }
+    }
+    & textarea{
+        height: 230px;
+        resize: none;
+    }
+}
+#contact-map {
+    & iframe {
+        height: 555px;
+        width: 100%;
+        margin-bottom: -6px;
+    }
+}

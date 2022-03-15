@@ -1,0 +1,71 @@
+/*----------------------------------------*/
+/*  12. TESTIMONIAL CSS START
+/*----------------------------------------*/
+
+.tptestinimail {
+	background: #fff;
+	padding: 44px 40px;
+	-webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+	-o-transition: all .3s cubic-bezier(.645,.045,.355,1);
+	transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+.testimonial-quote {
+	padding: 2px 5px 0 0;
+	font-size: 28px;
+	line-height: 0;
+	color: #fd914f;
+}
+.tptestinimail__author--img img {
+	width: 60px;
+	margin-right: 15px;
+}
+.tptestinimail__author--bio h4 {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: .5px;
+    margin-bottom: 5px;
+}
+.tptestinimail__author--bio h6 {
+	color: #7a7a7a;
+	letter-spacing: 0.5px;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 0;
+}
+.tptestinimail__text {
+	margin-bottom: 30px;
+}
+.wavify-wrapper .wavify-item {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0; 
+}
+.wavify-wrapper {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.test-active{
+	& .swiper-pagination-bullet.swiper-pagination-bullet-active{
+		background: $theme;
+	}
+}
+
+
+.tptestinimail__author--img-2{
+	@include mq(xs){
+		margin-bottom: 10px;
+	}
+}
+
+.review-area-padding{
+	@include mq(xs){
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}

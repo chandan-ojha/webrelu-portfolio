@@ -1,0 +1,525 @@
+/*----------------------------------------*/
+/*  02. HEADER CSS START
+/*----------------------------------------*/
+
+
+
+/* mean menu customize */
+.mean-container a.meanmenu-reveal {
+	display: none;
+}
+.mean-container .mean-nav {
+	background: none;
+	margin-top: 0;
+}
+.mean-container .mean-bar {
+	padding: 0;
+	min-height: auto;
+	background: none;
+}
+.mean-container .mean-nav > ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+	display: block !important;
+}
+.mean-container a.meanmenu-reveal {
+	display: none !important;
+}
+.mean-container .mean-nav ul li a {
+	width: 100%;
+	padding: 10px 0;
+	color: $black;
+	border-top: 1px solid #e9ebed;
+	font-size: 18px;
+    font-weight: 400;
+	font-family: 'Teko', sans-serif;
+	line-height: 1;
+}
+.mean-container .mean-nav ul li a:hover {
+	color: $theme;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 0px;
+	height: 15px;
+	line-height: 14px;
+	border-bottom: none;
+	padding: 0;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 44px;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    color: $black;
+}
+
+.mean-container .mean-nav > ul > li:first-child > a{
+	border-top: 0;
+}
+
+
+
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked{
+    color: $black;
+}
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked i{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    color: $black;
+}
+
+
+// header css
+.logo-black{
+	display: none;
+}
+
+.header-area{
+	&.sticky{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: $black;
+		z-index: 99;
+		animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+		-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+		display: block;
+		@include box-shadow(0px 10px 20px 0px rgba(8, 0, 42, 0.08));
+		&-2{
+			background: $white;
+		}
+	}
+}
+
+
+.header-pad{
+	padding: 0 65px;
+	@include mq(lg){
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@include mq(md){
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@include mq(sm){
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@include mq(xs){
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&-2{
+		@include mq(md){
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		@include mq(sm){
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		@include mq(xs){
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
+.header-transparent {
+	background: transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 9;
+}
+.logo img {
+	width: 150px;
+}
+.main-menu ul li {
+	display: inline-block;
+	position: relative;
+	margin: 0 25px;
+	padding: 30px 0px;
+
+	@include mq(lg){
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+.main-menu ul li > a {
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
+	position: relative;
+	font-family: "Teko", sans-serif;
+	padding: 12px 0px;
+	display: inline-block;
+}
+.main-menu ul li:hover > a {
+	color: $theme;
+}
+.main-menu ul li .sub-menu {
+	position: absolute;
+	left: 0;
+	top: 110%;
+	min-width: 220px;
+	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+	border-top: 4px solid $theme;
+	padding: 20px 0px 15px;
+	transition: .3s; 
+	text-align: left;
+}
+.main-menu ul li:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.main-menu ul li .sub-menu > li {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.main-menu ul li .sub-menu > li a {
+	display: block;
+	padding: 5px 24px;
+	position: relative;
+	color: #222;
+	border-radius: 0;
+	margin: 0 0;
+	line-height: 24px;
+}
+.main-menu ul li .sub-menu > li a.active {
+	color: $theme;
+}
+.main-menu ul li .sub-menu > li a:hover {
+	color: $theme;
+}
+
+.header-border{
+	// border-bottom:  1px solid rgba(255, 255, 255, 0.15);
+}
+.logo-border {
+	position: relative;
+	display: inline-block;
+}
+.logo-border::before {
+	position: absolute;
+	content: '';
+	right: -80px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 110px;
+	background: rgba(255, 255, 255, 0.15);
+	display: none;
+}
+
+// header info
+.header-right-info {
+	
+}
+.header-social a {
+	color: #fff;
+	margin-left: 18px;
+}
+.header-search{
+	position: relative;
+}
+.header-btn {
+	margin-left: 35px;
+	position: relative;
+}
+.header-search button {
+	background: none;
+	color: #fff;
+	padding: 0;
+	line-height: 1;
+}
+.header-search::before {
+	position: absolute;
+	content: "";
+	left: -35px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 110px;
+	background: rgba(255, 255, 255, 0.15);
+	display: none;
+}
+.header-search {
+
+}
+
+// header-light
+.top-bar {
+	border-bottom: 1px solid #ebeffc;
+}
+.header-light .main-menu ul li > a {
+	color: #595959;
+}
+.header-light .main-menu ul li:hover > a {
+	color: $theme;
+}
+.header-light .header-search {
+	margin-left: 25px;
+}
+.header-light .header-search button {
+	color: #595959;
+}
+.header-light .header-social a {
+	color: #595959;
+}
+.header-info span {
+	margin-right: 35px;
+}
+.header-info span i {
+	margin-right: 10px;
+	color: $theme;
+}
+.play-btn {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #222;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	color: #fff;
+	padding-left: 3px;
+	margin-left: 27px;
+}
+
+/* search popup */
+
+.search__popup{
+	position: fixed;
+	top: -50%;
+	left: 0;
+	width: 100%;
+	height: 170px;
+	background: $white;
+	z-index: 999;
+	visibility: hidden;
+	opacity: 0;
+	&.opened{
+		top: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+	&-wrapper{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		width: 80%;
+	}
+	&-input{
+		& input{
+			width: 100%;
+			height: 50px;
+			outline:none;
+			border: 0;
+			border-bottom: 2px solid $border;
+			padding: 0;
+			padding-right: 20px;
+			font-size: 14px;
+			font-weight: 500;
+			&:focus{
+				border-color: $black;
+			}
+			&::placeholder{
+				color: #d7d7d7;
+			}
+		}
+		& button{
+			position: absolute;
+			top: 50%;
+			right: 0;
+			@include transform(translateY(-50%));
+			font-size: 18px;
+			color: $black;
+			background: transparent;
+		}
+	}
+	&-close{
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		@include transform(translateX(-50%));
+		& button{
+			font-size: 18px;
+			background: transparent;
+			&:hover{
+				color: $black;
+			}
+		}
+	}
+}
+
+
+/* sidebar css start */
+
+.sidebar-toggle-btn{
+    & .line{
+        width: 30px;
+        height: 3px;
+        background-color: $white;
+        display: block;
+        margin: 6px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+	&-white{
+		& .line{
+			background: $white;
+		}
+	}
+    &:hover{
+        cursor: pointer;
+        & .line{
+            -webkit-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+            -o-transform: rotate(-30deg);
+            -moz-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+
+            &:nth-child(1){
+                width: 10px;
+            }
+            &:nth-child(2){
+                width: 20px;
+            }
+        }
+    }
+	&-2{
+		& .line{
+			background: $black;
+		}
+	}
+}
+
+/* sidebar area */
+
+.sidebar{
+    &__area{
+        position: fixed;
+        right: -340px;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        background: $white  none repeat scroll 0 0;
+        overflow-y: scroll;
+        @include box-shadow(-5px 0 20px -5px rgba(0, 0, 0, 0.5));
+        -webkit-transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: 9999;
+        &.sidebar-opened{
+            right: 0px;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        padding: 30px;
+    }
+    &__close{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        &-btn{
+			width: 40px;
+			height: 40px;
+			line-height: 38px;
+			text-align: center;
+			background: transparent;
+            color: $black;
+			&:focus{
+				color: $black;
+			}
+        }
+    }
+	&__search{
+		& input{
+			width: 100%;
+			height: 50px;
+			line-height: 20px;
+			@include border-radius(4px);
+			background: $grey-2;
+			outline: none;
+			border: 1px solid $white;
+			font-size: 16px;
+			padding: 25px 65px 20px 55px;
+
+			&::placeholder{
+				color: $e-text-1;
+			}
+			&:focus{
+				border-color: $theme;
+			}
+		}
+		& button{
+			background: transparent;
+			position: absolute;
+			top: 15px;
+			left: 24px;
+			& i{
+				&::after{
+					color: $black;
+					opacity: 1;
+				}
+				&::before{
+					color: $e-text-1;
+				}
+			}
+		}
+	}
+	&__contact{
+		& ul{
+			& li{
+				margin-bottom: 8px;
+				display: flex;
+				& .icon{
+					& i{
+						line-height: 27px;
+						margin-right: 15px;
+						color: $theme;
+					}
+				}
+				& .text{
+					& span,
+					& a{
+						color: $body-text-color;
+						&:hover{
+							color: $theme;
+						}
+					}
+				}
+			}
+		}
+	}
+}

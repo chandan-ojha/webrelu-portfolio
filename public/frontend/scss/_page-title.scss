@@ -1,0 +1,83 @@
+/*----------------------------------------*/
+/*  14. PAGE TITLE CSS START
+/*----------------------------------------*/
+
+.page{
+    &__title{
+        position: relative;
+        padding-top: 145px;
+        padding-bottom: 145px;
+        &-content{
+            position: relative;
+            z-index: 1;
+            & h2{
+                text-transform: uppercase;
+                font-size: 70px;
+                color: $white;
+                font-weight: 600;
+                @media #{$sm}{
+                    font-size: 60px;
+                }
+                @media #{$xs}{
+                    font-size: 40px;
+                }
+            }
+            & .breadcrumb{
+                padding: 0;
+                background-color: transparent;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                margin-bottom: 0;
+                &-item{
+                    text-transform: capitalize;
+                    color: $white;
+                    font-size: 18px;
+                    &:hover{
+                        color: $theme;
+                    }
+                    &.active{
+                        padding-left: 14px;
+                        &:hover{
+                            color: $theme;
+                        }
+                        &::before{
+                            content: '-';
+                            color: $white;
+                            padding-right: 14px;
+                        }
+                    }
+                }
+            }
+            & span{
+                color: $white;
+                opacity: .5;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            & h3{
+                font-size: 70px;
+                color: $white;
+                @media #{$sm}{
+                    font-size: 50px;
+                }
+                @media #{$xs}{
+                    font-size: 30px;
+                }
+            }
+        }
+        &-bg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    }
+}
