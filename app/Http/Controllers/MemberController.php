@@ -16,14 +16,14 @@ class MemberController extends Controller
         return view('backend.member.index', compact('members'));
     }
 
-   //Member create
+    //Member create
     public function create()
     {
         return view('backend.member.create');
     }
 
 
-   //Member information store
+    //Member information store
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -56,27 +56,55 @@ class MemberController extends Controller
         return redirect()->back();
     }
 
- 
-    public function show($id)
+    //Member information edit page
+    public function edit(Member $member)
     {
-        
-    }
-
-   
-    public function edit($id)
-    {
-        
+        return view('backend.member.edit', compact('member'));
     }
 
  
-    public function update(Request $request, $id)
+    //Member information update
+    public function update(Request $request, Member $member)
     {
-        
+        $this->validate($request, [
+            'name' => 'required|string|max:255',
+            'designation' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'facebook' => 'required',
+            'twitter' => 'required',
+            'linkedIn' => 'required',
+            
+        ]);
+
+        $member->name = $request->name;
+        $member->designation = $request->designation;
+        $member->facebook = $request->facebook;
+        $member->twitter = $request->twitter;
+        $member->linkedIn = $request->linkedIn;
+
+        if($request->hasFile('image')){
+            $image = $request->image;
+            $image_new_name = time() . '.' . $image->getClientOriginalExtension();
+            $image->move('storage/team/', $image_new_name);
+            $member->image = '/storage/team/' . $image_new_name;
+        }
+
+        $member->save();
+
+        Session::flash('success', 'Member updated successfully');
+        return redirect()->back();
     }
 
-   
-    public function destroy($id)
+    //Member delete
+    public function destroy(Member $member)
     {
-        
+        if($member){
+            if(file_exists(public_path($member->image))){
+                unlink(public_path($member->image));
+            }
+            $member->delete();
+            Session::flash('Member deleted successfully');
+        }
+        return redirect()->back();
     }
 }

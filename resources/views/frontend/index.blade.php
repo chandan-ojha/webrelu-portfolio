@@ -314,78 +314,24 @@
                 <div class="rows">
                     <div class="team-active swiper-container pb-30">
                         <div class="swiper-wrapper">
+                            @foreach($members as $member)
                             <div class="team-item swiper-slide">
                                 <div class="tpteam text-center mb-30">
                                     <div class="tpteam__img">
-                                        <img src="frontend/img/team/ashikur.jpg" alt="">
+                                        <img src="{{ asset($member->image) }}" alt="">
                                         <div class="tpteam__social">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-behance"></i></a>
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                                            <a href="{{ $member->facebook }}" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                                            <a href="{{ $member->twitter }}" target="_blank" ><i class="fab fa-twitter"></i></a>
+                                            <a href="{{ $member->linkedin }}" target="_blank" ><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="tpteam__text">
-                                        <h3 class="tpteam-title"><a href="team-details.html">Md. Ashikur Rahaman</a></h3>
-                                        <h5>Software Engineer</h5>
+                                        <h3 class="tpteam-title"><a href="#">{{ $member->name }}</a></h3>
+                                        <h5>{{ $member->designation }}</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="team-item swiper-slide">
-                                <div class="tpteam text-center mb-30">
-                                    <div class="tpteam__img">
-                                        <img src="frontend/img/team/mahfuj.jpg" alt="">
-                                        <div class="tpteam__social">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-behance"></i></a>
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="tpteam__text">
-                                        <h3 class="tpteam-title"><a href="team-details.html">Md. Mahfuj Hasan Shohug</a></h3>
-                                        <h5>Software Engineer</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-item swiper-slide">
-                                <div class="tpteam text-center mb-30">
-                                    <div class="tpteam__img">
-                                        <img src="frontend/img/team/joy.jpg" alt="">
-                                        <div class="tpteam__social">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-behance"></i></a>
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="tpteam__text">
-                                        <h3 class="tpteam-title"><a href="team-details.html">Abdullah Al Mamaun Joy</a></h3>
-                                        <h5>Software Engineer</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-item swiper-slide">
-                                <div class="tpteam text-center mb-30">
-                                    <div class="tpteam__img">
-                                        <img src="frontend/img/team/chandan.jpg" alt="">
-                                        <div class="tpteam__social">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                            <a href="#"><i class="fab fa-behance"></i></a>
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="tpteam__text">
-                                        <h3 class="tpteam-title"><a href="team-details.html">Chandan Ojha</a></h3>
-                                        <h5>Software Engineer</h5>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination team-pagination"></div>

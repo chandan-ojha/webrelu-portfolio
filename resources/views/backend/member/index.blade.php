@@ -57,8 +57,8 @@
                                         <td>{{ $member->designation }}</td>
                                         <td>{{ $member->created_at}}</td>
                                         <td class="d-flex" style="width: 150px">
-                                            <a href="#" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
-                                            <form action="#" class="mr-1" method="POST">
+                                            <a href="{{ route('member.edit', [$member->id]) }}" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
+                                            <form action="{{ route('member.destroy', [$member->id]) }}" class="mr-1" method="POST">
                                                 @method('DELETE')
                                                 @csrf 
                                                 <button type="submit" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i> </button>

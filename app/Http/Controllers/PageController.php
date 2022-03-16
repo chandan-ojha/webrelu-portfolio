@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Member;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home(){
-        return view('frontend.index');
+        $members = Member::all();
+        return view('frontend.index',compact('members'));
     }
 
     public function about(){
@@ -19,7 +21,8 @@ class PageController extends Controller
     }
 
     public function team(){
-        return view('frontend.team');
+        $members = Member::all();
+        return view('frontend.team',compact('members'));
     }
 
     public function service(){
