@@ -110,7 +110,7 @@
           </li>
 
           <li class="nav-item mt-auto">
-            <a href="#" class="nav-link">
+          <a href="{{ route('member.index') }}" class="nav-link {{ (request()->is('admin/member*')) ? 'active': '' }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Team Members
@@ -218,7 +218,9 @@
 <script src="{{ asset('backend') }}/js/adminlte.min.js"></script>
 <script src="{{ asset('backend') }}/js/bs-custom-file-input.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 @yield('script')
+
 <script>
   @if(Session::has('success'))
   toastr.success("{{ Session::get('success') }}");

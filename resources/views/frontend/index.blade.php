@@ -371,7 +371,7 @@
                             <div class="team-item swiper-slide">
                                 <div class="tpteam text-center mb-30">
                                     <div class="tpteam__img">
-                                        <img src="frontend/img/team/chandan.jpeg" alt="">
+                                        <img src="frontend/img/team/chandan.jpg" alt="">
                                         <div class="tpteam__social">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                                             <a href="#"><i class="fab fa-twitter"></i></a>
