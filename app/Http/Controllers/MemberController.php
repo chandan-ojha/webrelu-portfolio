@@ -69,7 +69,6 @@ class MemberController extends Controller
         $this->validate($request, [
             'name' => 'required|string|max:255',
             'designation' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'facebook' => 'required',
             'twitter' => 'required',
             'linkedIn' => 'required',

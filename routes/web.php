@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PageController;
@@ -30,7 +31,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('/dashboard',[DashboardController::class,'index'])->name('admin.dashboard');
     Route::resource('users', UserController::class);
     Route::resource('member', MemberController::class);
-
+    Route::resource('category', CategoryController::class);
 });
 
 require __DIR__.'/auth.php';
