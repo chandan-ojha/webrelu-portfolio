@@ -5,12 +5,12 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Member List</h1>
+                <h1 class="m-0 text-dark">Project List</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-                    <li class="breadcrumb-item active">Member list</li>
+                    <li class="breadcrumb-item active">Project list</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -26,8 +26,8 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h3 class="card-title">Member List</h3>
-                            <a href="{{ route('member.create') }}" class="btn btn-primary">Create Member</a>
+                            <h3 class="card-title">Project List</h3>
+                            <a href="{{ route('project.create') }}" class="btn btn-primary">Create Project</a>
                         </div>
                     </div>
                     <!-- /.card-header -->
@@ -37,28 +37,29 @@
                                 <tr>
                                     <th style="width: 10px">#</th>
                                     <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Designation</th>
-                                    <th>Created At</th>
-                                    <th  style="width: 150px">Action</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th style="width: 130px">Created Date</th>
+                                    <th style="width: 40px">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @if($members->count())
-                                @foreach ($members as $member)
+                                @if($projects->count())
+                                @foreach ($projects as $project)
                                     <tr>
-                                        <td>{{ $member->id }}</td>
-                                        <td> 
+                                        <td>{{ $project->id }}</td>
+                                        <td>
                                             <div style="max-width: 70px; max-height:70px;overflow:hidden">
-                                                <img src="{{ asset($member->image) }}" class="img-fluid" alt="">
+                                                <img src="{{ asset($project->image) }}" class="img-fluid img-rounded" alt="">
                                             </div>
                                         </td>
-                                        <td>{{ $member->name }}</td>
-                                        <td>{{ $member->designation }}</td>
-                                        <td>{{ $member->created_at->format('d M, Y') }}</td>
-                                        <td class="d-flex" style="width: 150px">
-                                            <a href="{{ route('member.edit', [$member->id]) }}" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
-                                            <form action="{{ route('member.destroy', [$member->id]) }}" class="mr-1" method="POST">
+                                        <td>{{ $project->title }}</td>
+                                        <td>{{ $project->category->name }}</td>
+                                        <td style="width: 130px">{{ $project->created_at->format('d M, Y') }}</td>
+                                        <td class="d-flex">
+                                            <a href="{{ route('project.show', [$project->id]) }}" class="btn btn-sm btn-success mr-1"> <i class="fas fa-eye"></i> </a>
+                                            <a href="{{ route('project.edit', [$project->id]) }}" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
+                                            <form action="{{ route('project.destroy', [$project->id]) }}" class="mr-1" method="POST">
                                                 @method('DELETE')
                                                 @csrf 
                                                 <button type="submit" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i> </button>
@@ -68,18 +69,17 @@
                                 @endforeach
                                 @else   
                                     <tr>
-                                        <td colspan="5">
-                                            <h5 class="text-center">No members found.</h5>
+                                        <td colspan="6">
+                                            <h5 class="text-center">No projects found.</h5>
                                         </td>
                                     </tr>
-
                                 @endif
                             </tbody>
                         </table>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer d-flex justify-content-center">
-                        {{ $members->links() }}
+                        {{ $projects->links() }}
                     </div>
                 </div>
             </div>

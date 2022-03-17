@@ -85,9 +85,10 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
                             <h3 class="card-title">Project List</h3>
-                            <a href="#" class="btn btn-primary">Project List</a>
+                            <a href="{{ route('project.index') }}" class="btn btn-primary">Project List</a>
                         </div>
                     </div>
+                    
                     <!-- /.card-header -->
                     <div class="card-body p-0">
                         <table class="table table-striped">
@@ -95,49 +96,43 @@
                                 <tr>
                                     <th style="width: 10px">#</th>
                                     <th>Image</th>
-                                    <th>Name</th>
+                                    <th>Title</th>
                                     <th>Category</th>
-                                    <th>Created Date</th>
+                                    <th style="width: 130px">Created Date</th>
                                     <th style="width: 40px">Action</th>
                                 </tr>
                             </thead>
-                                <tr>
-                                <td>1</td>
-                                <td>
-                                 <div style="max-width: 70px; max-height:70px;overflow:hidden">
-                                   <img src="#" class="img-fluid img-rounded" alt="">
-                                 </div>
-                                </td>
-                                <td>E-commerce</td>
-                                <td>Web Application</td>
-                                <td>2021-09-10 04:04:05</td>
-                                <td class="d-flex">
-                                            <a href="#" class="btn btn-sm btn-success mr-1"> <i class="fas fa-eye"></i> </a>
-                                            <a href="#" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
-                                            <form action="#" class="mr-1" >
-                                                <button type="submit" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i> </button>
-                                            </form>
-                                </td>
-                                </tr> 
-                                <tr>
-                                <td>2</td>
-                                <td>
-                                 <div style="max-width: 70px; max-height:70px;overflow:hidden">
-                                   <img src="#" class="img-fluid img-rounded" alt="">
-                                 </div>
-                                </td>
-                                <td>Inventory Management System</td>
-                                <td>Web Application</td>
-                                <td>2021-09-10 04:04:05</td>
-                                <td class="d-flex">
-                                            <a href="#" class="btn btn-sm btn-success mr-1"> <i class="fas fa-eye"></i> </a>
-                                            <a href="#" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
-                                            <form action="#" class="mr-1" >
-                                                <button type="submit" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i> </button>
-                                            </form>
-                                </td>
-                                </tr>                              
                             <tbody>
+                                @if($projects->count())
+                                @foreach ($projects as $project)
+                                    <tr>
+                                        <td>{{ $project->id }}</td>
+                                        <td>
+                                            <div style="max-width: 70px; max-height:70px;overflow:hidden">
+                                                <img src="{{ asset($project->image) }}" class="img-fluid img-rounded" alt="">
+                                            </div>
+                                        </td>
+                                        <td>{{ $project->title }}</td>
+                                        <td>{{ $project->category->name }}</td>
+                                        <td style="width: 130px">{{ $project->created_at->format('d M, Y') }}</td>
+                                        <td class="d-flex">
+                                            <a href="{{ route('project.show', [$project->id]) }}" class="btn btn-sm btn-success mr-1"> <i class="fas fa-eye"></i> </a>
+                                            <a href="{{ route('project.edit', [$project->id]) }}" class="btn btn-sm btn-primary mr-1"> <i class="fas fa-edit"></i> </a>
+                                            <form action="{{ route('project.destroy', [$project->id]) }}" class="mr-1" method="POST">
+                                                @method('DELETE')
+                                                @csrf 
+                                                <button type="submit" class="btn btn-sm btn-danger"> <i class="fas fa-trash"></i> </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                @else   
+                                    <tr>
+                                        <td colspan="6">
+                                            <h5 class="text-center">No projects found.</h5>
+                                        </td>
+                                    </tr>
+                                @endif
                             </tbody>
                         </table>
                     </div>

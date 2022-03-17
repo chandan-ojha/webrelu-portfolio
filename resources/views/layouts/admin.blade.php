@@ -128,7 +128,7 @@
           </li>
 
           <li class="nav-item mt-auto">
-            <a href="#" class="nav-link">
+          <a href="{{ route('project.index') }}" class="nav-link {{ (request()->is('admin/projects*')) ? 'active': '' }}">
               <i class="nav-icon fas fa-pen-square"></i>
               <p>
                 Projects

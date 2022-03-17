@@ -4507,4 +4507,16 @@ p {
     }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Protfolio Image scroll */
+
+.scrol_img{
+    background-size: 100% auto !important;
+    background-position: top !important;
+    transition: 5s !important;
+    height: 313px !important;
+    width: 370px !important;
+}   
+
+.scrol_img:hover{
+    background-position: bottom !important;
+}

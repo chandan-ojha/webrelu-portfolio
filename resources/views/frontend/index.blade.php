@@ -416,145 +416,99 @@
         </div>
         <!-- faq  -->
 
-        <!-- START PORTFOLIO DESIGN AREA -->
-        <section class="portfolio-area pt-120 pb-70">
-            <div class="container">
-                <div class="row mb-40">
-                    <div class="col-12">
-                        <div class="sec-wrapper text-center">
-                            <h5>Features Project</h5>
-                            <h2 class="section-title">Explore Our Project.</h2>
+      <!-- START PORTFOLIO DESIGN AREA -->
+      <section class="portfolio-area pt-120">
+        <div class="container">
+            <div class="row align-items-center mb-50">
+                <!-- START PORTFOLIO FILTER AREA -->
+                <div class="col-xl-12">
+                    <div class="text-center">
+                        <div class="portfolio-filter">
+                            <button class="active" data-filter="*">Show all</button>
+                            <button data-filter=".cat1">WordPress</button>
+                            <button data-filter=".cat2">Woocommerce</button>
+                            <button data-filter=".cat3">Shopify</button>
+                            <button data-filter=".cat4">Php Laravel</button>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- START PORTFOLIO FILTER AREA -->
-                    <div class="col-12">
-                        <div class="text-center">
-                            <div class="portfolio-filter mb-40">
-                                <button class="active" data-filter="*">Show all</button>
-                                <button data-filter=".cat1">Design</button>
-                                <button data-filter=".cat2">Logo</button>
-                                <button data-filter=".cat3">Business</button>
-                                <button data-filter=".cat4">Agency</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END PORTFOLIO FILTER AREA -->
-                </div>
-                <div id="portfolio-grid" class="row row-portfolio">
-                    <div class="col-lg-4 col-md-6 grid-item cat2 cat4">
-                        <div class="tportfolio mb-30">
-                            <div class="tportfolio__img">
-                                <a class="popup-image" href="frontend/img/portfolio/p1.jpg" data-fancybox="gallery">
-                                 <img src="frontend/img/portfolio/p1.jpg" alt="" />
-                              </a>
-                            </div>
-                            <div class="tportfolio__text">
-                                <h3 class="tportfolio-title"><a href="portfolio-details.html">WebRrelu IT</a></h3>
-                                <h4>A Complete Software Solution</h4>
-                                <div class="portfolio-plus">
-                                    <a href="frontend/img/portfolio/port-1.jpg" data-fancybox="gallery">
-                                    <i class="fal fa-plus"></i>
-                              </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item cat3 cat1">
-                        <div class="tportfolio mb-30">
-                            <div class="tportfolio__img">
-                                <a class="popup-image" href="frontend/img/portfolio/p2.jpg" data-fancybox="gallery">
-                                 <img src="frontend/img/portfolio/p2.jpg" alt="" />
-                              </a>
-                            </div>
-                            <div class="tportfolio__text">
-                                <h3 class="tportfolio-title"><a href="portfolio-details.html">Marketing Analysis</a></h3>
-                                <h4>Consultation, Idea</h4>
-                                <div class="portfolio-plus">
-                                    <a href="frontend/img/portfolio/port-1.jpg" data-fancybox="gallery">
-                                    <i class="fal fa-plus"></i>
-                              </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item cat4 cat3">
-                        <div class="tportfolio mb-30">
-                            <div class="tportfolio__img">
-                                <a class="popup-image" href="frontend/img/portfolio/p3.jpg" data-fancybox="gallery">
-                                 <img src="frontend/img/portfolio/p3.jpg" alt="" />
-                              </a>
-                            </div>
-                            <div class="tportfolio__text">
-                                <h3 class="tportfolio-title"><a href="portfolio-details.html">Busines Idea</a></h3>
-                                <h4>Deaign, Brand</h4>
-                                <div class="portfolio-plus">
-                                    <a href="frontend/img/portfolio/port-1.jpg" data-fancybox="gallery">
-                                    <i class="fal fa-plus"></i>
-                              </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item cat1 cat4">
-                        <div class="tportfolio mb-30">
-                            <div class="tportfolio__img">
-                                <a class="popup-image" href="frontend/img/portfolio/p4.jpg" data-fancybox="gallery">
-                                 <img src="frontend/img/portfolio/p4.jpg" alt="" />
-                              </a>
-                            </div>
-                            <div class="tportfolio__text">
-                                <h3 class="tportfolio-title"><a href="portfolio-details.html">Consultation</a></h3>
-                                <h4>Print, Market</h4>
-                                <div class="portfolio-plus">
-                                    <a href="frontend/img/portfolio/port-1.jpg" data-fancybox="gallery">
-                                    <i class="fal fa-plus"></i>
-                              </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item cat2 cat1">
-                        <div class="tportfolio mb-30">
-                            <div class="tportfolio__img">
-                                <a class="popup-image" href="frontend/img/portfolio/p5.jpg" data-fancybox="gallery">
-                                 <img src="frontend/img/portfolio/p5.jpg" alt="" />
-                              </a>
-                            </div>
-                            <div class="tportfolio__text">
-                                <h3 class="tportfolio-title"><a href="portfolio-details.html">Digital Marketing</a></h3>
-                                <h4>Logo, Busines</h4>
-                                <div class="portfolio-plus">
-                                    <a href="frontend/img/portfolio/port-1.jpg" data-fancybox="gallery">
-                                    <i class="fal fa-plus"></i>
-                              </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grid-item cat4 cat1">
-                        <div class="tportfolio mb-30">
-                            <div class="tportfolio__img">
-                                <a class="popup-image" href="frontend/img/portfolio/p6.jpg" data-fancybox="gallery">
-                                 <img src="frontend/img/portfolio/p6.jpg" alt="" />
-                              </a>
-                            </div>
-                            <div class="tportfolio__text">
-                                <h3 class="tportfolio-title"><a href="portfolio-details.html">Super Experience</a></h3>
-                                <h4>Market, Idea</h4>
-                                <div class="portfolio-plus">
-                                    <a href="frontend/img/portfolio/port-1.jpg" data-fancybox="gallery">
-                                    <i class="fal fa-plus"></i>
-                              </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- END PORTFOLIO FILTER AREA -->
             </div>
-        </section>
-        <!-- / END PORTFOLIO DESIGN AREA -->
+            <div id="portfolio-grid" class="row row-portfolio">
+                <!-- For first catagory -->
+                <div class="col-lg-4 col-md-6 col-sm-6 grid-item cat1">
+                    <div class="tportfolio mb-30">
+                        <div class="tportfolio__img">
+                           <a href="#">
+                              <div class="scrol_img" style="background: url('frontend/img/portfolio/my_portfolio.png')">
+
+                              </div>
+                           </a>
+                            <div class="tportfolio__text tportfolio__text-2">
+                                <h3 class="tportfolio-title"><a href="#">DIU Data Science Lab</a></h3>
+                                <h4>CMS Project, Laravel</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of first catagory -->
+                <!-- Second Catagory -->
+                <div class="col-lg-4 col-md-6 col-sm-6 grid-item cat2">
+                    <div class="tportfolio mb-30">
+                     <div class="tportfolio__img">
+                        <a href="#">
+                           <div class="scrol_img" style="background: url('frontend/img/portfolio/my_portfolio.png')">
+
+                           </div>
+                        </a>
+                         <div class="tportfolio__text tportfolio__text-2">
+                             <h3 class="tportfolio-title"><a href="#">DIU Data Science Lab</a></h3>
+                             <h4>CMS Project, Laravel</h4>
+                         </div>
+                     </div>
+                    </div>
+                </div>
+                <!-- End of second catagory-->
+
+                <!-- Third catagory-->
+                <div class="col-lg-4 col-md-6 col-sm-6 grid-item cat3">
+                    <div class="tportfolio mb-30">
+                     <div class="tportfolio__img">
+                        <a href="#">
+                           <div class="scrol_img" style="background: url('frontend/img/portfolio/my_portfolio.png')">
+
+                           </div>
+                        </a>
+                         <div class="tportfolio__text tportfolio__text-2">
+                             <h3 class="tportfolio-title"><a href="#">DIU Data Science Lab</a></h3>
+                             <h4>CMS Project, Laravel</h4>
+                         </div>
+                     </div>
+                    </div>
+                </div>
+                <!-- 3rd end -->
+
+                <!-- 4th Start-->
+                <div class="col-lg-4 col-md-6 col-sm-6 grid-item cat4">
+                    <div class="tportfolio mb-30">
+                     <div class="tportfolio__img">
+                        <a href="#">
+                           <div class="scrol_img" style="background: url('frontend/img/portfolio/my_portfolio.png')">
+
+                           </div>
+                        </a>
+                         <div class="tportfolio__text tportfolio__text-2">
+                             <h3 class="tportfolio-title"><a href="#">DIU Data Science Lab</a></h3>
+                             <h4>CMS Project, Laravel</h4>
+                         </div>
+                     </div>
+                    </div>
+                </div>
+                <!-- 4th end-->
+            </div>
+        </div>
+       </section>
+      <!-- / END PORTFOLIO DESIGN AREA -->
 
         <!-- counter -->
         <section class="cta-area cta-overlay pos-rel black-bg pt-120 pb-120" data-overlay="dark" data-opacity="7">
