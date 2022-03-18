@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    //Dashboard
     public function index(){
         $projects = Project::orderBy('created_at', 'DESC')->take(10)->get();
         $projectCount = Project::all()->count();

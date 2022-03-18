@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    //home page
     public function home(){
         $members = Member::all();
         $categories = Category::all();
@@ -18,19 +19,23 @@ class PageController extends Controller
         return view('frontend.index',compact('members','categories','c_projects'));
     }
 
+    //about page
     public function about(){
         return view('frontend.about');
     }
 
+    //portfolio page
     public function portfolio(){
         return view('frontend.portfolio');
     }
 
+    //team page
     public function team(){
         $members = Member::all();
         return view('frontend.team',compact('members'));
     }
 
+    //Service page
     public function service(){
         return view('frontend.service');
     }

@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
  
+    //Project index page
     public function index()
     {
         $projects = Project::orderBy('created_at', 'DESC')->paginate(20);
@@ -18,14 +19,14 @@ class ProjectController extends Controller
         
     }
 
-    
+    //Project create page
     public function create()
     {
         $categories = Category::all();
         return view('backend.project.create', compact(['categories']));
     }
 
-
+    //Project information store page
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -55,19 +56,20 @@ class ProjectController extends Controller
         
     }
 
-  
+    //Project show page
     public function show(Project $project)
     {
         return view('backend.project.show', compact('project'));
     }
 
+    //Project information edit page
     public function edit(Project $project)
     {
         $categories = Category::all();
         return view('backend.project.edit', compact(['project', 'categories']));
     }
 
-  
+    //Project information update 
     public function update(Request $request, Project $project)
     {
         $this->validate($request, [
@@ -95,7 +97,7 @@ class ProjectController extends Controller
         return redirect()->back();
     }
 
-    
+    //Project delete
     public function destroy(Project $project)
     {
         if($project){
