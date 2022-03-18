@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PageController;
@@ -26,6 +27,7 @@ Route::get('/portfolio',[PageController::class,'portfolio'])->name('frontend.por
 Route::get('/team',[PageController::class,'team'])->name('frontend.team');
 Route::get('/service',[PageController::class,'service'])->name('frontend.service');
 Route::get('/contact',[PageController::class,'contact'])->name('frontend.contact');
+Route::post('/contact',[PageController::class,'send_message'])->name('frontend.contact');
 
 // Admin Panel Routes
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
@@ -34,6 +36,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::resource('member', MemberController::class);
     Route::resource('category', CategoryController::class);
     Route::resource('project', ProjectController::class);
+    Route::resource('contacts', ContactController::class);
 });
 
 require __DIR__.'/auth.php';

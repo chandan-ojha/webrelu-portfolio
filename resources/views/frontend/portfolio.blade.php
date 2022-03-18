@@ -25,6 +25,14 @@
     <!-- START PORTFOLIO DESIGN AREA -->
     <section class="portfolio-area pt-120">
         <div class="container">
+        <div class="row mb-40">
+                    <div class="col-12">
+                        <div class="sec-wrapper text-center">
+                            <h5>Features Project</h5>
+                            <h2 class="section-title">Explore Our Project.</h2>
+                        </div>
+                    </div>
+         </div>
             <div class="row align-items-center mb-50">
                 <!-- START PORTFOLIO FILTER AREA -->
                 <div class="col-xl-12">
@@ -115,35 +123,6 @@
         </div>
        </section>
       <!-- / END PORTFOLIO DESIGN AREA -->
-
-   
-
-    <!-- quality area start here -->
-    <section class="quality-area pt-120 pb-90 fix">
-       <div class="container">
-          <div class="row align-items-center">
-             <div class="col-lg-8 col-md-9">
-                   <div class="kquality mb-30 aos-init aos-animate" data-aos="zoom-in-right">
-                      <div class="kquality-icon">
-                         <i class="flaticon-ecommerce"></i>
-                      </div>
-                      <div class="kquality-text fix">
-                         <h3 class="mb-20 kquality-text-title">We Deliver the Best Quality</h3>
-                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered in some form, by injected humour words.</p>
-                      </div>
-                   </div>
-             </div>
-             <div class="col-lg-4 col-md-3">
-                   <div class="text-lg-end mb-30 aos-init aos-animate" data-aos="zoom-in-left">
-                      <div class="kquality-img">
-                         <img src="frontend/img/logo/blacklogo.png" class="img-fluid" alt="cta-img">
-                      </div>
-                   </div>
-             </div>
-          </div>
-       </div>
-    </section>
-    <!-- quality area start here -->
 
  </main>
 @endsection

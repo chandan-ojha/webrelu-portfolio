@@ -81,8 +81,8 @@
                     <h5>Get to Know WebRelu</h5>
                     <h2 class="section-title text-white">Do you have any question? Feel free to contact us.</h2>
                     <div class="ab-btn mt-30">
-                        <a href="about.html" class="tp-btn">
-                      Learn More
+                        <a href="/contact" class="tp-btn">
+                      Contact Us
                       <div class="tp-bg">
                          <div></div>
                          <div></div>

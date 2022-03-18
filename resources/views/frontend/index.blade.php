@@ -38,7 +38,7 @@
                                         <span class="slider-sub-title" data-animation="fadeInUp" data-delay="0.3s">welcome to WebRelu IT Ltd.</span>
                                         <h2 class="slider-title" data-animation="fadeInUp" data-delay="0.5s">With Critified <br> Software Engineer.</h2>
                                         <div class="slide-btn mt-30" data-animation="fadeInUp" data-delay="0.7s">
-                                            <a href="about.html" class="tp-btn">Discover More</a>
+                                            <a href="#" class="tp-btn">Discover More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -222,7 +222,7 @@
                         <div class="ab-box pl-50 mb-30">
                             <div class="sec-wrapper">
                                 <h5>About Us</h5>
-                                <h2 class="section-title">We are trusted by more than <span>800 clients.</span></h2>
+                                <h2 class="section-title">We offer modern software solutions for growing your business</h2>
                             </div>
                             <div class="ab-item-box mt-40 mb-30">
                                 <div class="ab-items fix mb-20">
@@ -231,7 +231,7 @@
                                     </div>
                                     <div class="ab-item-text fix">
                                         <h3 class="ab-item-title">Pleasant Consulting</h3>
-                                        <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollic tudin, lorem is simply free text quis bibendum.</p>
+                                        <p>We try our best to meet the needs of the clients.</p>
                                     </div>
                                 </div>
                                 <div class="ab-items fix mb-20">
@@ -240,12 +240,12 @@
                                     </div>
                                     <div class="ab-item-text fix">
                                         <h3 class="ab-item-title">Trusted Services</h3>
-                                        <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollic tudin, lorem is simply free text quis bibendum.</p>
+                                        <p>Our experienced development team works efficiently in the search for the most suitable solutions to guarantee the customer, the latest technology and tool for their needs.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="ab-btn">
-                                <a href="about.html" class="tp-btn">Learn More</a>
+                                <a href="#" class="tp-btn">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -349,7 +349,7 @@
                         <div class="sec-wrapper mb-30">
                             <h5>Frequently Asked Questions</h5>
                             <h2 class="section-title text-white">How Can We Help?</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremq laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis quasi architecto</p>
+                            <p>We are an advanced Software Development Team that creates and transforms products to endeavor growth.</p>
                             <div class="ab-btn mt-30">
                                 <a href="about.html" class="tp-btn">Learn More</a>
                             </div>
@@ -365,7 +365,7 @@
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        <p>We offer modern software solutions for growing your business.
                                             </p>
                                     </div>
                                 </div>
@@ -378,8 +378,7 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                            </p>
+                                        <p>We will implement your thoughts in a way to reach the world.</p>
                                     </div>
                                 </div>
                             </div>
@@ -391,8 +390,7 @@
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                            </p>
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                                     </div>
                                 </div>
                             </div>
@@ -404,7 +402,7 @@
                                 </h2>
                                 <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                             </p>
                                     </div>
                                 </div>
@@ -419,6 +417,14 @@
       <!-- START PORTFOLIO DESIGN AREA -->
       <section class="portfolio-area pt-120">
         <div class="container">
+         <div class="row mb-40">
+                    <div class="col-12">
+                        <div class="sec-wrapper text-center">
+                            <h5>Features Project</h5>
+                            <h2 class="section-title">Explore Our Project.</h2>
+                        </div>
+                    </div>
+            </div>
             <div class="row align-items-center mb-50">
                 <!-- START PORTFOLIO FILTER AREA -->
                 <div class="col-xl-12">
@@ -507,7 +513,7 @@
                 <!-- 4th end-->
             </div>
         </div>
-       </section>
+      </section>
       <!-- / END PORTFOLIO DESIGN AREA -->
 
         <!-- counter -->

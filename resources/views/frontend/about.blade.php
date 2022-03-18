@@ -59,7 +59,7 @@
                     <div class="ab-box pl-50 mb-30">
                         <div class="sec-wrapper">
                             <h5>About Us</h5>
-                            <h2 class="section-title">We are trusted by more than <span>6,800 clients.</span></h2>
+                            <h2 class="section-title">We offer modern software solutions for growing your business.</h2>
                         </div>
                         <div class="ab-item-box mt-40 mb-30">
                             <div class="ab-items fix mb-20">
@@ -68,8 +68,7 @@
                                 </div>
                                 <div class="ab-item-text fix">
                                     <h3 class="ab-item-title">Pleasant Consulting</h3>
-                                    <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollic tudin, lorem is simply
-                                        free text quis bibendum.</p>
+                                    <p>We try our best to meet the needs of the clients.</p>
                                 </div>
                             </div>
                             <div class="ab-items fix mb-20">
@@ -78,13 +77,12 @@
                                 </div>
                                 <div class="ab-item-text fix">
                                     <h3 class="ab-item-title">Trusted Services</h3>
-                                    <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollic tudin, lorem is simply
-                                        free text quis bibendum.</p>
+                                    <p>Our experienced development team works efficiently in the search for the most suitable solutions to guarantee the customer, the latest technology and tool for their needs.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="ab-btn">
-                            <a href="about.html" class="tp-btn">Contact us</a>
+                                <a href="#" class="tp-btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -156,102 +154,6 @@
         </div>
     </section>
     <!-- counter -->
-
-    <!-- team  -->
-    <div class="team-area pt-120 pb-90">
-        <div class="container">
-            <div class="row mb-60">
-                <div class="col-12">
-                    <div class="sec-wrapper text-center">
-                        <h5>Our Team</h5>
-                        <h2 class="section-title">Expert Members.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="rows">
-                <div class="team-active swiper-container pb-30">
-                    <div class="swiper-wrapper">
-                        <div class="team-item swiper-slide">
-                            <div class="tpteam text-center mb-30">
-                                <div class="tpteam__img">
-                                    <img src="frontend/img/team/ashikur.jpg" alt="">
-                                    <div class="tpteam__social">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpteam__text">
-                                    <h3 class="tpteam-title"><a href="team-details.html">Md. Ashikur Rahaman</a></h3>
-                                    <h5>Software Engineer</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item swiper-slide">
-                            <div class="tpteam text-center mb-30">
-                                <div class="tpteam__img">
-                                    <img src="frontend/img/team/mahfuj.jpg" alt="">
-                                    <div class="tpteam__social">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpteam__text">
-                                    <h3 class="tpteam-title"><a href="team-details.html">Md. Mahfuj Hasan Shohug</a>
-                                    </h3>
-                                    <h5>Software Engineer</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item swiper-slide">
-                            <div class="tpteam text-center mb-30">
-                                <div class="tpteam__img">
-                                    <img src="frontend/img/team/joy.jpg" alt="">
-                                    <div class="tpteam__social">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpteam__text">
-                                    <h3 class="tpteam-title"><a href="team-details.html">Abdullah Al Mamaun Joy</a></h3>
-                                    <h5>Software Engineer</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item swiper-slide">
-                            <div class="tpteam text-center mb-30">
-                                <div class="tpteam__img">
-                                    <img src="frontend/img/team/chandan.jpeg" alt="">
-                                    <div class="tpteam__social">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpteam__text">
-                                    <h3 class="tpteam-title"><a href="team-details.html">Chandan Ojha</a></h3>
-                                    <h5>Software Engineer</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination team-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- team  -->
 
     <!-- testimoinial area start -->
     <section class="review-area review-area-padding grey-bgs pt-150 pb-120 pos-rel pl-50 pr-50">
@@ -421,121 +323,5 @@
         </div>
     </section>
     <!-- testimoinial area end -->
-
-    <!-- faq  -->
-    <div class="faq-area pos-rel black-bg">
-        <div class="faq-bg" data-background="frontend/img/logo/mainlogo.png"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 offset-xl-6 col-lg-6 offset-lg-6">
-                    <div class="faq-content pl-70 pt-120 pb-120">
-                        <div class="sec-wrapper mb-30">
-                            <h5>Thinking</h5>
-                            <h2 class="section-title text-white">Knowledge is
-                                the best investment.</h2>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How can we help your business?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        What are the advantages of Binifox?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Let’s find an office near you?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree1" aria-expanded="false"
-                                        aria-controls="collapseThree1">
-                                        Binifox WordPress theme for business?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree1" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree1" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- faq  -->
-
-    <!-- brand area end here -->
-    {{-- <div class="brand-area bg-grey pt-100 pb-100">
-    <div class="container">
-        <div class="brand-active swiper-container">
-            <div class="swiper-wrapper align-items-center">
-                <div class="brand-wrapper swiper-slide wow fadeInUp" data-wow-delay=".3s" data-swiper-autoplay="10000">
-                    <a href="#"><img src="frontend/img/brand/brand-1.png" class="img-fluid" alt="img"></a>
-                </div>
-                <div class="brand-wrapper swiper-slide wow fadeInUp" data-wow-delay=".6s" data-swiper-autoplay="10000">
-                    <a href="#"><img src="frontend/img/brand/brand-2.png" class="img-fluid" alt="img"></a>
-                </div>
-                <div class="brand-wrapper swiper-slide wow fadeInUp" data-wow-delay=".9s" data-swiper-autoplay="10000">
-                    <a href="#"><img src="frontend/img/brand/brand-3.png" class="img-fluid" alt="img"></a>
-                </div>
-                <div class="brand-wrapper swiper-slide wow fadeInUp" data-wow-delay="1.2s" data-swiper-autoplay="10000">
-                    <a href="#"><img src="frontend/img/brand/brand-4.png" class="img-fluid" alt="img"></a>
-                </div>
-                <div class="brand-wrapper swiper-slide wow fadeInUp" data-wow-delay="1.5s" data-swiper-autoplay="10000">
-                    <a href="#"><img src="frontend/img/brand/brand-5.png" class="img-fluid" alt="img"></a>
-                </div>
-                <div class="brand-wrapper swiper-slide wow fadeInUp" data-wow-delay="1.8s" data-swiper-autoplay="10000">
-                    <a href="#"><img src="frontend/img/brand/brand-1.png" class="img-fluid" alt="img"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-    <!-- brand area start here -->
 </main>
 @endsection

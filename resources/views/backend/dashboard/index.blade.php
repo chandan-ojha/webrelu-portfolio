@@ -26,7 +26,7 @@
               <!-- small box -->
               <div class="small-box bg-danger">
                 <div class="inner">
-                  <h3>4</h3>
+                  <h3>{{ $memberCount }}</h3>
 
                   <p>Team Members</p>
                 </div>
@@ -40,7 +40,7 @@
               <!-- small box -->
               <div class="small-box bg-success">
                 <div class="inner">
-                  <h3>5</h3>
+                  <h3>{{ $categoryCount }}</h3>
 
                   <p>Categories</p>
                 </div>
@@ -68,7 +68,7 @@
               <!-- small box -->
               <div class="small-box bg-info">
                 <div class="inner">
-                  <h3>15</h3>
+                  <h3>{{ $projectCount }}</h3>
 
                   <p>Projects</p>
                 </div>
